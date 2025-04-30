@@ -4,7 +4,6 @@ async function getData() {
             .then(response => response.json())
             .then(json => console.log(json))
 
-        // console.log(data); // This will log a Promise, not the data
     }catch(err){
         console.error("Error occurred: ", err);
     }
@@ -12,7 +11,7 @@ async function getData() {
 
 function bigWork() {
     // Do Something
-    return getData();
+    return getData(); // This function returns a promise not the data itself
 }
 
 async function DATA() {
